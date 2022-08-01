@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>StarBucks Landing Page</title>
+  </head>
+  <body>
+    <section>
+      <div class="circle">
+      </div>
+      <header>
+        <a href="#"><img src="images/logo.png" alt="starbuck's logo"></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">menu</a></li>
+          <li><a href="#">What's new</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>It's not just coffee <br> It's <span>Starbucks</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat odit, quia voluptate. Non nam dolores laudantium, adipisci placeat nobis iure cum, deserunt eligendi? Esse, recusandae expedita quam dicta laboriosam excepturi.</p>
+          <a href="#">Learn More </a>
+        </div>
+        <div class="imgBox">
+          <img src="images/img1.png" class="starbucks"alt="">
+        </div>
+
+      </div>
+      <ul class="thumb">
+        <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png'); changeCircleColor('#017143') "alt="1"></li>
+        <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png'); changeCircleColor('#eb7495') "alt="2"></li>
+        <li><img src="thumb3.png" onclick="imgSlider('images/img3.png'); changeCircleColor('#d752b1') "alt="3"></li>
+      </ul>
+      <ul class="sci">
+        <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything)
+      {
+        document.querySelector('.starbucks').src=anything;
+      }
+      function changeCircleColor(color)
+      {
+        const circle=document.querySelector('.circle');
+        circle.style.background=color;
+      }
+    </script>
+
+  </body>
+</html>
